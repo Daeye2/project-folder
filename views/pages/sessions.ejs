@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+
+<section class="page-header">
+  <div class="container">
+    <h2>Live Sessions & Special Events</h2>
+    <p>Join our interactive live sessions and special events to enhance your learning experience</p>
+  </div>
+</section>
+
+<section class="sessions">
+  <div class="container">
+    <div class="sessions-grid">
+      <% sessions.forEach(session => { %>
+        <div class="session-card">
+          <div class="session-content">
+            <h3><%= session.title %></h3>
+            <p class="session-description"><%= session.description %></p>
+            <div class="session-details">
+              <p><strong>Course:</strong> <%= session.course_name %></p>
+              <p><strong>Date:</strong> <%= session.date %></p>
+              <p><strong>Time:</strong> <%= session.time %></p>
+            </div>
+            <a href="#" class="btn-small">Register</a>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+
+<section class="page-header">
+  <div class="container">
+    <h2>Our Instructors</h2>
+    <p>Meet our team of expert instructors who are passionate about teaching</p>
+  </div>
+</section>
+
+<section class="instructors">
+  <div class="container">
+    <div class="instructors-grid">
+      <% instructors.forEach(instructor => { %>
+        <div class="instructor-card">
+          <div class="instructor-image">
+            <!-- Placeholder image for instructors -->
+            <img src="/images/instructor-placeholder.jpg" alt="<%= instructor.name %>" class="instructor-img">
+          </div>
+          <div class="instructor-content">
+            <h3><%= instructor.name %></h3>
+            <p class="instructor-bio"><%= instructor.bio %></p>
+            <p><strong>Subjects:</strong> <%= instructor.subjects %></p>
+            <p><strong>Contact:</strong> <%= instructor.email %></p>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/footer') %>

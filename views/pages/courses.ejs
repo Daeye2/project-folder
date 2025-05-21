@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+<section class="page-header">
+  <div class="container">
+    <h2>Our Courses</h2>
+    <p>Explore our range of courses designed to help you master new skills</p>
+  </div>
+</section>
+
+<section class="courses">
+  <div class="container">
+    <div class="courses-grid">
+      <% courses.forEach(course => { %>
+        <div class="course-card">
+          <div class="course-content">
+            <h3><%= course.name %></h3>
+            <p class="course-description"><%= course.description %></p>
+            <div class="course-details">
+              <p><strong>Instructor:</strong> <%= course.instructor_name %></p>
+              <p><strong>Duration:</strong> <%= course.duration %></p>
+            </div>
+            <a href="#" class="btn-small">Learn More</a>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/footer') %>

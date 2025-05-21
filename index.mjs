@@ -78,10 +78,10 @@ async function insertSampleData() {
     await db.run(`
       INSERT INTO instructors (name, bio, subjects, email) 
       VALUES 
-        ('Dr. Lena Martinez', 'Seasoned educator and developer with a focus on modern web ecosystems and scalable UI systems.', 'HTML/CSS, JavaScript, Front-End Architecture', 'lena.martinez@edunova.com'),
-        ('Dr. Rajiv Patel', 'Database engineer with a background in distributed systems and cloud database technologies.', 'SQL, NoSQL, Cloud Databases', 'rajiv.patel@edunova.com'),
-        ('Alison Reed', 'Human-centered designer with a decade of experience crafting digital experiences.', 'UX Strategy, Interaction Design, Prototyping', 'alison.reed@edunova.com'),
-        ('Dr. Mateo Rossi', 'Machine learning researcher passionate about democratizing AI education and tools.', 'Machine Learning, AI Ethics, Data Analysis', 'mateo.rossi@edunova.com')
+        ('Dr. Lena Martinez', 'Seasoned educator and developer with a focus on modern web ecosystems and scalable UI systems.', 'HTML/CSS, JavaScript, Front-End Architecture', 'lena.martinez@learnacademy.com'),
+        ('Dr. Rajiv Patel', 'Database engineer with a background in distributed systems and cloud database technologies.', 'SQL, NoSQL, Cloud Databases', 'rajiv.patel@learnacademy.com'),
+        ('Alison Reed', 'Human-centered designer with a decade of experience crafting digital experiences.', 'UX Strategy, Interaction Design, Prototyping', 'alison.reed@learnacademy.com'),
+        ('Dr. Mateo Rossi', 'Machine learning researcher passionate about democratizing AI education and tools.', 'Machine Learning, AI Ethics, Data Analysis', 'mateo.ross@learnacademy.com')
     `);
 
     await db.run(`

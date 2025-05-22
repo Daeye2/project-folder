@@ -613,3 +613,105 @@
       font-size: 1.8rem;
     }
   }
+
+  /* Past Events Styles - Add this to the end of your styles.css file */
+
+.year-section {
+  margin-bottom: 60px;
+}
+
+.year-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.past-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid var(--accent-color);
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.event-content {
+  padding: 30px;
+}
+
+.event-content h4 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.event-description {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.event-details {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.event-details p {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.event-details strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Responsive adjustments for past events */
+@media (max-width: 768px) {
+  .past-events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .year-heading {
+    font-size: 1.7rem;
+  }
+  
+  .event-content {
+    padding: 20px;
+  }
+  
+  .event-content h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-content {
+    padding: 15px;
+  }
+  
+  .year-heading {
+    font-size: 1.5rem;
+  }
+}

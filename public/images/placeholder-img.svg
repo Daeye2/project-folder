@@ -1,6 +1,0 @@
-<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <rect width="300" height="300" fill="#e5e7eb"/>
-  <circle cx="150" cy="120" r="60" fill="#9ca3af"/>
-  <rect x="70" y="200" width="160" height="80" rx="40" fill="#9ca3af"/>
-  <text x="150" y="290" font-family="Arial" font-size="16" fill="#4b5563" text-anchor="middle">Instructor Image</text>
-</svg>
